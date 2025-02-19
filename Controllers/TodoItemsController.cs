@@ -39,7 +39,7 @@ namespace ClickUp_API.Controllers
                 return NotFound();
             }
 
-            return todoItem;
+            return Ok(todoItem);
         }
 
         // PUT: api/TodoItems/5
@@ -66,11 +66,11 @@ namespace ClickUp_API.Controllers
                 }
                 else
                 {
-                    throw;
+                    return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while updating the item.");
                 }
             }
 
-            return NoContent();
+            return Ok(todoItem);
         }
 
         // POST: api/TodoItems
@@ -78,6 +78,9 @@ namespace ClickUp_API.Controllers
         [HttpPost]
         public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
         {
+            if (todoItem is null)
+                return BadRequest();
+            
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
 
