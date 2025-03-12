@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickUp-API", "ClickUp-API.csproj", "{00AB6C54-3B8A-4CE2-8824-C0BEDFE71456}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFlow-API", "TaskFlow-API.csproj", "{00AB6C54-3B8A-4CE2-8824-C0BEDFE71456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFlow-API.test", "ClickUp-API.test\TaskFlow-API.test.csproj", "{C590D6C2-2B6F-4522-859D-53CAD58AA9D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{00AB6C54-3B8A-4CE2-8824-C0BEDFE71456}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00AB6C54-3B8A-4CE2-8824-C0BEDFE71456}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00AB6C54-3B8A-4CE2-8824-C0BEDFE71456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C590D6C2-2B6F-4522-859D-53CAD58AA9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C590D6C2-2B6F-4522-859D-53CAD58AA9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C590D6C2-2B6F-4522-859D-53CAD58AA9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C590D6C2-2B6F-4522-859D-53CAD58AA9D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
